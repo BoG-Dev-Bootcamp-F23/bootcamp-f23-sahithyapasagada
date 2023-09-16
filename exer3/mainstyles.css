@@ -105,27 +105,23 @@ body {
   }
 
   footer {
-    width: 100;
     background-color: #DA3287;
     text-align: center;
+    height: 35px; 
+    width: 100%;
+    color: white; 
+    font-size: 20px;
+    font-weight: bolder;
     position: fixed;
     bottom: 0;
+    padding: 10px;
   }
 
   .panel {
-    border-bottom: 10px solid white;
-    height: 50px;
     display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    align-content: 
-  }
-
-  p {
-    color: white;
-    font-size: 20px;
-    font-weight: bolder; 
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
 
