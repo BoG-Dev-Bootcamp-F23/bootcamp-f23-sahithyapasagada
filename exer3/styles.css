@@ -107,6 +107,9 @@ body {
   footer {
     width: 100;
     background-color: #DA3287;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
   }
 
   .panel {
@@ -121,7 +124,7 @@ body {
   p {
     color: white;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: bolder; 
     text-align: center;
   }
 
