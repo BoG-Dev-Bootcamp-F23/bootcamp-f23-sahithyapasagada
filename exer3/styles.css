@@ -9,9 +9,14 @@ body {
     background-position-x: right;
     background-position-y: bottom;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
   .nav-bar {
-    background-color: 121212;
+    margin: 0;
+    background-color: #DA3287;
   }
   
   .nav-bar a {
@@ -46,4 +51,79 @@ body {
     position: fixed;
     bottom: 0;
   }
+
+  .search {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 780px;
+    height: 65px;
+    font-size: 20px;
+    padding-left: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 45px;
+    border: 3px solid #DA3287;
+  }
+
+  input:focus{
+    outline: none;
+  }
+
+  form {
+    position: relative;
+  }
+
+  .buttons {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  button {
+    width: 300px;
+    border: 1px solid transparent;
+    padding: 20px 40px;
+    background-color: #DA3287;
+    font-family: Oswald;
+    font-weight: bolder;
+    font-size: 20px;    
+    color: #FDD7E4;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    border: 5px solid beige;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+
+  footer {
+    width: 100;
+    background-color: #DA3287;
+  }
+
+  .panel {
+    border-bottom: 10px solid white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-content: 
+  }
+
+  p {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+
   
