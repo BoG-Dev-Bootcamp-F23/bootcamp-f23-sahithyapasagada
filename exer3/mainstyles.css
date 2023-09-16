@@ -35,16 +35,31 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
-  
+
   .nav-bar li {
-    padding: 15px;
+    padding: 10px;
     padding-right: 30px;
+    align-items: center;
   }
   
   .links {
     display: flex;
     flex-direction: row;
+    align-items: center;
+  }
+
+  .sign-in {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+  }
+
+  .profile-pic {
+    width: 35px;
+    height: auto;
   }
   
   .footer {
