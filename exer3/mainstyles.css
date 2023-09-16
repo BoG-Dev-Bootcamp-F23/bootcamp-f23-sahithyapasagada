@@ -67,6 +67,7 @@ body {
   .profile-pic {
     width: 35px;
     height: auto;
+    margin-left: -20px;
   }
   
   .footer {
