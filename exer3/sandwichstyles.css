@@ -75,6 +75,11 @@ body {
     align-items: center;
   }
 
+  .full {
+    display: flex;
+    position: absolute;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -82,6 +87,18 @@ body {
     position: absolute;
     top: 280px;
     left: 100px;
+    overflow: hidden;
+  }
+
+  .sandimg {
+    width: 50%;
+    position: relative;
+    top: 270px;
+    left: 1250px;
+    border-radius: 30px;
+    border-color: goldenrod;
+    border-style: inset;
+    border-width: 10px;
     overflow: hidden;
   }
 
@@ -106,6 +123,10 @@ body {
     background-image: linear-gradient(to bottom right, #DA3283, #FA526E, #FF7B5C, #FFA651, #FFD056);
   }
 
+  .box1:hover {
+    
+  }
+
   footer {
     background-color: #DA3287;
     text-align: center;
@@ -125,6 +146,11 @@ body {
     justify-content: center;
     height: 100%;
   }
+
+  p {
+    color: cornsilk;
+  }
+
 
 
   
