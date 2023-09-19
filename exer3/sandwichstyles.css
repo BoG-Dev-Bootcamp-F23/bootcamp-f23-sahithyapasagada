@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
   .nav-bar {
     margin: 0;
@@ -29,7 +30,7 @@ body {
     color: #F2BA49;
     transition: color 0.3s;
   }
-  
+
   ul.nav-bar {
     list-style: none;
     display: flex;
@@ -75,26 +76,21 @@ body {
     align-items: center;
   }
 
-  .full {
-    display: flex;
-    position: absolute;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    position: absolute;
+    position: fixed;
     top: 280px;
     left: 100px;
     overflow: hidden;
   }
 
   .sandimg {
-    width: 50%;
-    position: relative;
+    width: 30%;
+    position: fixed;
     top: 270px;
-    left: 1250px;
+    left: 1240px;
     border-radius: 30px;
     border-color: goldenrod;
     border-style: inset;
@@ -123,10 +119,6 @@ body {
     background-image: linear-gradient(to bottom right, #DA3283, #FA526E, #FF7B5C, #FFA651, #FFD056);
   }
 
-  .box1:hover {
-    
-  }
-
   footer {
     background-color: #DA3287;
     text-align: center;
@@ -148,7 +140,8 @@ body {
   }
 
   p {
-    color: cornsilk;
+    color: floralwhite;
+    text-indent: 30px;
   }
 
 

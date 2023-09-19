@@ -5,10 +5,7 @@ body {
     background-color: #252324;
     font-size: 16px;
     font-family: Oswald;
-    /*background-image: url(https://lh3.googleusercontent.com/pw/AIL4fc9ubOZVFxe0DjCzwIDGW6r_giDmheGhjURlLBNu7vQAg_9J3_iCtEpavtVdCVBlOVbLoeFFdgzR6FuNRYg2cZJRkbosj9LhVMI3VagywAd9mybbMgmVWlARxdr_Cobdc0wPn1KMuTGH3amf0W955zYE=w1410-h923-s-no);
-    */
     background-image: url(bgpic.png);
-    
     background-position-x: right;
     background-position-y: top;
     background-size: cover;
