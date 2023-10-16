@@ -53,6 +53,9 @@ export default function Train(props) {
                     <p>{getDelay()}</p>
                 </div>
             </div>
+            <div className="right">
+                getWaitTime();
+            </div>
         </div>
 
 
