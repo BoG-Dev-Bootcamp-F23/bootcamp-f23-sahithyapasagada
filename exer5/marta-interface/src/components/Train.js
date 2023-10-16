@@ -22,7 +22,7 @@ export default function Train(props) {
     }
 
     function getDelay() {
-        if (trainData[delay == "T0S"]) {
+        if (trainData[delay === "T0S"]) {
             return <p className="onTime">On time</p>;
         } else {
             return <p className="delayed">Delayed</p>; 
@@ -33,8 +33,8 @@ export default function Train(props) {
         let num = waitTime.split(" ");
         return (
             <div className="waitTime">
-                <h1 className="wait">num[0]</h1>;
-                <p className="min">num[1]</p>;
+                <h1 className="wait">{num[0]}</h1>;
+                <p className="min">{num[1]}</p>;
             </div>
         )  
     }
@@ -42,10 +42,10 @@ export default function Train(props) {
     return (
         <div className="train">
             <div className="left">
-                <img src={logo} className="logo"/>
+                <img src={logo} className="logo" alt=''/>
                 <div className="top">
                     <h1 className="station">{station}</h1>
-                    <img src={rightArrow} className="rightArrow"/>
+                    <img src={rightArrow} className="rightArrow" alt='' />
                     <h1 className="destination">{destination}</h1>
                 </div>
                 <div className="bottom">
@@ -53,7 +53,7 @@ export default function Train(props) {
                     <p>{getDelay()}</p>
                 </div>
             </div>
-            <div className="right">
+            <div className="right"> 
                 {getWaitTime()};
             </div>
         </div>
