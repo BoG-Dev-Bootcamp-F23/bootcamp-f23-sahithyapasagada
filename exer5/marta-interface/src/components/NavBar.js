@@ -3,7 +3,7 @@ export default function NavBar(props) {
     const stations = stationData[currColor.toLowerCase()];
     return (
         <div className="navBar">
-            <p>Select your starting station</p>
+            <p className="select">Select your starting station</p>
             <div className="navBarElement">All Stations</div>
             {stations.map((station) => {
                 return (
