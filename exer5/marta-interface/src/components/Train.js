@@ -54,7 +54,7 @@ export default function Train(props) {
                 </div>
             </div>
             <div className="right">
-                getWaitTime();
+                {getWaitTime()};
             </div>
         </div>
 
