@@ -1,7 +1,7 @@
 import Train from "./Train";
 export default function TrainList(props) {
   const {userColor, trainData} = props;
-  const line = trainData["LINE"];
+  console.log(userColor);
   const trainArrivals = trainData["RailArrivals"];
 
   function direction() {
@@ -31,7 +31,7 @@ export default function TrainList(props) {
         {direction()};
       </div>
         {trainArrivals.map((train) => {
-          if(line === userColor) {
+          if(train["LINE"] === userColor) {
             return <Train trainData={train} />
           }
         })};
