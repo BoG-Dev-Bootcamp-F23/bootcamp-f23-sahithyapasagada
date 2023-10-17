@@ -9,7 +9,15 @@ export default function Train(props) {
     const delay = trainData["DELAY"];
     const waitTime = trainData["WAITING_TIME"];
     const line = trainData["LINE"];
-    let num = waitTime.split(" ")
+    let num = waitTime.split(" ");
+
+    function titleCase(str) {
+        return str.replace(/\w\S*/g,
+        function (txt) {
+            return txt.charAt(0).toUpperCase() +
+                txt.substr(1).toLowerCase();
+        });
+    }
 
     function getLineColor() {
         if (line === "GOLD") {
@@ -48,9 +56,9 @@ export default function Train(props) {
                     <img src={logo} className="logo" alt=''/>
                     <div className='topAndBottom'>
                         <div className="top">
-                            <h1 className="station">{station.charAt(0).toUpperCase() + station.substr(1, station.indexOf(" ")).toLowerCase() + "Station"}</h1>
+                            <h1 className="station">{titleCase(station)}</h1>
                             <img src={rightArrow} className="rightArrow" alt='' />
-                            <h1 className="destination">{destination.charAt(0).toUpperCase() + destination.substr(1).toLowerCase() + " Station"}</h1>
+                            <h1 className="destination">{titleCase(destination) + " Station"}</h1>
                         </div>
                         <div className="bottom">
                             <p className="lineColor" style={{backgroundColor: getLineColor()[1]}}>{getLineColor()[0]}</p>

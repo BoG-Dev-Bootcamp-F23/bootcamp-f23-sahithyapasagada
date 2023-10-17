@@ -17,7 +17,7 @@ export default function TrainList(props) {
     }
     return (
       <div>
-          <button>Arriving</button>
+          <button style={{ backgroundColor: 'black', color: 'white', borderColor: 'black',}}>Arriving</button>
           <button>Scheduled</button>
           <button>Eastbound</button>
           <button>Westbound</button>
