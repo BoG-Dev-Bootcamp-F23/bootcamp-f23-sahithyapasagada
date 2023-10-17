@@ -2,18 +2,18 @@ import Train from "./Train";
 export default function TrainList(props) {
   const {userColor, trainData} = props;
   console.log(userColor);
-  const trainArrivals = trainData["RailArrivals"];
+  const trainArrivals = trainData["RailArrivals"]
 
   function direction() {
     if (userColor === "GOLD" | userColor === "RED") {
       return (
         <div>
-            <button>Arriving</button>
+            <button style={{ backgroundColor: 'black', color: 'white', borderColor: 'black',}}>Arriving</button>
             <button>Scheduled</button>
             <button>Northbound</button>
             <button>Southbound</button>
         </div>
-      );
+      )
     }
     return (
       <div>
@@ -22,19 +22,19 @@ export default function TrainList(props) {
           <button>Eastbound</button>
           <button>Westbound</button>
       </div>
-    );
+    )
   }
 
   return (
     <div className="trainList">
       <div>
-        {direction()};
+        {direction()}
       </div>
         {trainArrivals.map((train) => {
           if(train["LINE"] === userColor) {
             return <Train trainData={train} />
           }
-        })};
+        })}
     </div>
   )
 }

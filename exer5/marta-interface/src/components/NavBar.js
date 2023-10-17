@@ -9,7 +9,7 @@ export default function NavBar(props) {
                 return (
                     <div className="navBarElement">{station}</div>
                 )
-            })};
+            })}
         </div>
     )
 

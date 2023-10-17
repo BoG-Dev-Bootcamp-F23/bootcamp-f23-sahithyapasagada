@@ -16,5 +16,5 @@ export default function LinesPage() {
         <TrainList userColor={currColor} trainData={trainData} />
       </div>
     </div>
-  );
+  )
 }
