@@ -22,7 +22,6 @@ export default function NavBar(props) {
                     >{station}</div>
                 )
             })}
-            
         </div>
     )
 
