@@ -3,7 +3,6 @@ import rightArrow from './rightArrow.png';
 
 export default function Train(props) {
     const {trainData} = props;
-
     const station = trainData["STATION"];
     const destination = trainData["DESTINATION"];
     const delay = trainData["DELAY"];

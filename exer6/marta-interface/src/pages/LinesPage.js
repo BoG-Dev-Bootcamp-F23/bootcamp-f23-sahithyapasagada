@@ -40,7 +40,8 @@ export default function LinesPage() {
       <h1 className='heading'>{currColor}</h1>
       <div className='container'>
         <NavBar currColor={currColor} stationData={stationData} />
-        <TrainList userColor={currColor} trainData={trainData} />
+        {/* <TrainList userColor={currColor} trainData={trainData} /> */}
+        <TrainList userColor={currColor}/>
       </div>
     </div>
   )
