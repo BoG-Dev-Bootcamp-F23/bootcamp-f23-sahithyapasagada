@@ -6,7 +6,6 @@ export default function TrainList(props) {
   // const {userColor, trainData} = props;
   const {userColor} = props;
   const [data, setData] = useState(null);
-  // const trainArrivals = trainData["RailArrivals"]
 
   const API_URL = `http://13.59.196.129:3001/arrivals/${userColor.toLowerCase()}`
 

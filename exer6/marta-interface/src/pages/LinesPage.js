@@ -1,6 +1,5 @@
 // get static data
 import stationData from '../server/stationData';
-import trainData from '../server/trainData';
 import TrainList from '../components/TrainList';
 import NavBar from '../components/NavBar';
 import { useState } from "react";
