@@ -1,8 +1,8 @@
 import { useState } from "react";
 export default function NavBar(props) {
-    const {currColor, stationData} = props;
-    const [activeStation, setActiveStation] = useState("");
-    const stations = stationData[currColor.toLowerCase()];
+    const {stationData} = props;
+    const [activeStation, setActiveStation] = useState("All Stations");
+
 
     return (
         <div className="navBar">
@@ -12,7 +12,8 @@ export default function NavBar(props) {
                     setActiveStation("All Stations");
                 }}
             >All Stations</div>
-            {stations.map((station) => {
+
+            {stationData.map((station) => {
                 return (
                     <div className={station === activeStation ? 'navBarElementHighlight' : 'navBarElement'}
                         onClick={() => {
