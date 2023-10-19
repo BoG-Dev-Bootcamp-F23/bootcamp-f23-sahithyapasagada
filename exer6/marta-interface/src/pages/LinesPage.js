@@ -1,8 +1,7 @@
 import stationData from "../server/stationData";
 import TrainList from "../components/TrainList";
 import NavBar from "../components/NavBar";
-import React from "react";
-import ReactLoading from "react-loading";
+import LoadingScreen from "./LoadingScreen";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -20,25 +19,10 @@ export default function LinesPage() {
       .then(() => setLoading(false));
   }, [currColor]);
 
-  function loadingScreen() {
-    return (
-      <div className="loadingScreen">
-          <h2>Loading...</h2>
-          <div className="loading">
-          <ReactLoading
-              type="spin"
-              color="#F7CE2C"
-              width={400}
-          />
-          </div>
-      </div>
-  );
-  }
-
   return (
     <>
       {loading ? (
-        <div>{loadingScreen()}</div>
+        <LoadingScreen />
       ) : (
         <div className="linesPages">
           <div className="colorButtonContainer">
@@ -85,7 +69,7 @@ export default function LinesPage() {
 
           <h1 className="heading">{currColor}</h1>
           <div className="container">
-            <NavBar currColor={currColor} stationData={stationData} />
+            <NavBar currColor={currColor} stationData={stationData} data={data} />
             <TrainList userColor={currColor} data={data} />
           </div>
         </div>
