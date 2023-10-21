@@ -1,23 +1,19 @@
-import { useState } from "react";
-export default function NavBar(props) {
-    const {stationData} = props;
-    const [activeStation, setActiveStation] = useState("All Stations");
-
+export default function NavBar({stationData, updateStation, activeStation}) {
 
     return (
         <div className="navBar">
             <p className="select">Select your starting station</p>
             <div className={"All Stations" === activeStation ? 'navBarElementHighlight' : 'navBarElement'}
                 onClick={() => {
-                    setActiveStation("All Stations");
+                    updateStation("All Stations");
                 }}
             >All Stations</div>
 
-            {stationData.map((station) => {
+            {stationData?.map((station) => {
                 return (
                     <div className={station === activeStation ? 'navBarElementHighlight' : 'navBarElement'}
                         onClick={() => {
-                            setActiveStation(station);
+                            updateStation(station);
                         }}
                     >{station}</div>
                 )
