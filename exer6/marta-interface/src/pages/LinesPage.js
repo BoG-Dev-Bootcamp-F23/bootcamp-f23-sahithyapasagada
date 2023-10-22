@@ -1,4 +1,3 @@
-//import stationData from "../server/stationData";
 import TrainList from "../components/TrainList";
 import NavBar from "../components/NavBar";
 import ColorButtons from "../components/ColorButtons";
@@ -30,8 +29,6 @@ export default function LinesPage() {
     fetchData()
   }, [currColor])
 
-  //C:\_home\bootcamp-f23-sahithyapasagada\exer6\marta-interface\src\pages\LinesPage.js
-
   return (
     <div className="linesPages">
       <ColorButtons 
@@ -52,7 +49,11 @@ export default function LinesPage() {
         <div className="container">
           <NavBar stationData={stationData} updateStation = {setActiveStation} activeStation={activeStation}/>
           {console.log(activeStation)}
-          <TrainList userColor={currColor} data={trainData} filterStation = {activeStation}/>
+          <TrainList 
+            userColor={currColor} 
+            data={trainData} 
+            filterStation = {activeStation} 
+          />
         </div>
       </div>
     }
