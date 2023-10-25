@@ -5,12 +5,12 @@ export default function Home() {
 
     return (
         <div>
-            <div className="home">
-                <h2 className='homeTitle'>MARTA</h2>
+            <div className="page">
+                <h2 className='navTitle'>MARTA</h2>
                 <p onClick = {() => navigate("/about")} className = "aboutMarta">About MARTA</p>
             </div>  
-            <div className="homeContent">
-                <div className="routes">
+            <div className="content">
+                <div className="margin">
                         <h1 className='view'>VIEW ROUTES SCHEDULE</h1>
                         <div className="route" onClick={() => {navigate("/lines/gold")}}>Gold Line</div>
                         <div className="route" onClick={() => {navigate("/lines/red")}}>Red Line</div>
