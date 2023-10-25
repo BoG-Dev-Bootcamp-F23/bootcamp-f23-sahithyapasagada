@@ -245,3 +245,60 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-content: center;
 }
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.homeTitle {
+  text-align: center;
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  font-weight: bolder;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.aboutMarta {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 20px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.view {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 70px;
+}
+.routes {
+  margin-right: 50px;
+}
+
+.trainPicture {
+  width: 35%;
+}
+
+.route {
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: start;
+  padding-bottom: 7px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}

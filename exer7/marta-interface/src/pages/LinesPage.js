@@ -4,12 +4,15 @@ import ColorButtons from "../components/ColorButtons";
 import ReactLoading from "react-loading";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function LinesPage() {
   const API_URL_ARRIVALS = 'http://13.59.196.129:3001/arrivals/'
   const API_URL_STATIONS = 'http://13.59.196.129:3001/stations/'
-
-  const [currColor, setCurrColor] = useState("GOLD");
+  const navigate = useNavigate();
+  const params = useParams();
+  const currColor = params.lineColor;
+  //const [currColor, setCurrColor] = useState("GOLD");
   const [trainData, setTrainData] = useState(null);
   const [stationData, setStationData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -28,22 +31,23 @@ export default function LinesPage() {
     }
     fetchData()
   }, [currColor])
-
+  
   return (
     <div className="linesPages">
       <ColorButtons 
-        setGold={() => {setCurrColor("GOLD")}}
-        setRed={() => {setCurrColor("RED")}}
-        setBlue={() => {setCurrColor("BLUE")}}
-        setGreen={() => {setCurrColor("GREEN")}}
+        setGold={() => {navigate("/lines/gold")}}
+        setRed={() => {navigate("/lines/red")}}
+        setBlue={() => {navigate("/lines/blue")}}
+        setGreen={() => {navigate("/lines/green")}}
       />
     {loading ? 
       <div className="loadingScreen">
         <h2>Loading...</h2>
-        <div className="loading">
+        <div className="loading"> 
 
         <ReactLoading type="spin" color={currColor} width={400}/></div>
-      </div> : 
+      </div> 
+      : 
       <div>
         <h1 className="heading">{currColor}</h1>
         <div className="container">
