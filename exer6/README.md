@@ -1,4 +1,6 @@
 # Exercise 6 - Advanced Marta Interface
+## DEMO VIDEO
+DEMO VIDEO: https://youtu.be/7cxkQ9IpKv4
 
 ## Description
 In this exercise, bootcampers will familiarize themselves with state management and hooks.
@@ -51,8 +53,6 @@ As a bonus, once the rest of the code displays successfully, we recommend incorp
 - Make the four buttons from Exercise 5 functional so that the trains are filtered by one or more buttons at a time
 - Create a 0.5-2 minute demo video to showcase your project's functionality (this is just so that we don't have to go through and install dependencies / deal with versioning errors for every single exercise)
 - Bonus: Conditional rendering for when there are no trains to display
-
-- DEMO VIDEO: https://youtu.be/7cxkQ9IpKv4
 
 ## Display Example
 
