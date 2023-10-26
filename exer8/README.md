@@ -1,4 +1,4 @@
-# Exercise 8 - POKE API
+# Exercise 8 - Poké API
 
 ## Description
 In this exercise, bootcampers will familiarize themselves with Next.js, API Endpoints, and Dynamic Routing.
@@ -38,13 +38,14 @@ GET /evolve/:name
 - returns the next evolution step for a specified Pokemon. If the Pokemon is fully evolved, return the current evolution stage
 
 ```http
-GET /experience/:name?level={level_num}
+POST /battle
 ```
-- calculates and returns the experience a Pokemon has based on its name and level.
-- level is passed into the request as a **query** parameter
-- See [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Experience) for info on growth rates and experience 
+- Body of the request
+	- `pokemon1` - the name of the first Pokemon to be battled (String)
+	- `pokemon2` - the name of the second Pokemon to be battled (String)
+- `pokemon1` and `pokemon2` are name strings sent in the **body** of the post request. Returns the pokemon with the higher base stat. 
 
-### TIPS
+### Tips
 You can look at `hello.js` for a baseline for how to call and return from an endpoint.
 
 Remember to set your status codes before returning: Inside your try/catch, if the data has successfully returned then set the code to `200`, if the data is invalid set it to `400`, and otherwise set the code to `500`.
